@@ -71,7 +71,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun HomePage(pages:List<Int>, modifier: Modifier = Modifier) {
+fun HomePage(pages:List<Int>) {
     Column {
         AddressRow()
         HorizontalPagerDemo(pages = pages)
@@ -132,7 +132,7 @@ fun HorizontalPagerDemo(pages: List<Int>) {
 }
 
 @Composable
-fun AppSelection(modifier: Modifier = Modifier) {
+fun AppSelection() {
     Column (
         modifier = Modifier
             .background(
@@ -233,7 +233,7 @@ fun AppSelection(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun AddressRow(modifier: Modifier = Modifier) {
+fun AddressRow() {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Absolute.SpaceBetween,
